@@ -1,7 +1,18 @@
+@font-face{
+	font-family: "Oswald";
+	src: url(fonts/Oswald-Regular.ttf);
+}
+
+@font-face{
+	font-family: "Oswald-light";
+	src: url(fonts/Oswald-Light.ttf);
+}
+
 body{
 	margin: 0;
 	padding: 0;
-	background: #ffffff;
+	background: #fff;
+	font-family: Oswald-light, sans-serif;
 }
 
 .header{
@@ -10,36 +21,31 @@ body{
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100px;
+	height: 115px;
 	width: 100%;
-	background-color: #EBEBEB;
-	border-bottom: 1px solid black;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 1)
+	background-color: #fff;
 }
 
 .name{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 300px;
+	margin: 10px 0;
 	text-align: center;
+	font-size: 29pt;
+	letter-spacing: 3px;
+	font-weight: normal;
 }
-
-.name h1{
-	font-size: 18pt;
-}
-
 .name a{
-	color: black;
+	font-family: Oswald, sans-serif;
+	color: rgb(56, 53, 48);
 	text-decoration: none;
 }
 
 .menu{
 	margin: 0 auto;
-	height: 100%;
-	width: 450px;
-	padding: 58px 0 0 0;
+	padding: 4px 0 5px;
+	width: 90%;
+	text-align: center;
+	border-top: 1px solid rgba(56, 53, 48, 0.2);
+	border-bottom: 1px solid rgba(56, 53, 48, 0.2);
 }
 
 .main_menu{
@@ -48,43 +54,45 @@ body{
 }
 
 .main_menu li{
-	display: inline;
+	display: inline-block;
 	margin-right: 20px;
 	list-style: none;
 }
 
 .main_menu a{
-	font-size: 13pt;
+	font-size: 14pt;
 	text-decoration: none;
-	color: #6F6F6F;
-    font-family: Arial,Helvetica,sans-serif;
+	color: #383530;
+    font-family: Oswald-light, sans-serif;
+	letter-spacing: 2.5px;
+	font-weight: 300;
 }
 
 .main_menu a:hover{
-	color: #B6B1B1;
+	color: rgb(255, 102, 0);
 	transition: color 0.4s ease 0s;
 }
 
 .main{
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 115px;
 	width: 90%;
 }
 
 .foto{
 	padding: 70px 50px;
 	float:left;
-	width: 35%;
+	width: 25%;
 }
 
 .foto img{
-	width: 400px;
+	width: 300px;
 }
 
 .fio{
 	padding: 50px;
 	float: right;
-	width: 45%;
+	width: 55%;
 }
 
 table{
@@ -93,7 +101,7 @@ table{
 }
 
 table td{
-padding: 10px 30px 0 0;
+	padding: 10px 10px 0 0;
 }
 
 table td:first-child{
@@ -114,7 +122,7 @@ hr{
 	margin-top: 50px;
 	height: 1px;
 	width: 90%;
-	background: black;
+	background: rgba(56, 53, 48, 0.2);
 	border: none;
 	clear: both;
 }
@@ -122,11 +130,14 @@ hr{
 .copy{
 	margin: 30px 0;
 	font-size: 22px;
+	font-weight: bold;
 	text-align: center;
+	color: #383530;
 }
 
 .left{
 	float:left;
+	margin-bottom: 50px;
 	width: 45%;
 }
 
@@ -137,8 +148,13 @@ hr{
 	width: 45%;
 }
 
-.run{
+.hobby_run{
 	float: right;
+	margin: 10px;
+}
+
+.hobby_velo{
+	float: left;
 	margin: 10px;
 }
 
@@ -149,4 +165,79 @@ p{
 
 .clirfix{
 	clear: both;
+}
+
+.align_center{
+	text-align: center;
+}
+
+.contact img{
+	width: 100%;
+}
+
+form p{
+	font-family: Oswald, sans-serif;
+	color: rgb(56, 53, 48);
+}
+
+.form_input{
+	border: 1px solid rgba(56, 53, 48, 0.2);
+}
+
+.sum_button{
+	padding: 5px 30px;
+	background: #f5f5f5;
+	font-family: Oswald-light, sans-serif;
+	font-size: 18px;
+	color: rgb(56, 53, 48);
+	border: 1px solid rgba(56, 53, 48, 0.2);
+	cursor: pointer;
+}
+
+.sum_button:hover{
+	background: rgb(255, 102, 0);
+	transition: background 0.4s ease 0s;
+}
+
+.blog_img{
+	float: left;
+	width: 30%;
+}
+
+.blog_img img{
+	max-width: 100%;
+}
+
+.blog_text{
+	float: right;
+	width: 65%;
+}
+
+.blog_text a{
+	margin-top: 70px;
+	float: right;
+	padding-right: 20px;
+	color: rgb(56, 53, 48);
+}
+
+.gallery{
+	display: inline-block;
+	padding: 20px 20px 40px;
+	height: 240px;
+	width: 300px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.gallery:hover{
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1)
+}
+
+
+.gallery img{
+	width: 300px;
+}
+
+.gallery_block{
+	text-align: center;
 }
