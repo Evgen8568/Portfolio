@@ -230,7 +230,8 @@ form p{
 }
 
 .gallery:hover{
-	box-shadow: 0 0 5px rgba(0, 0, 0, 1)
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+	cursor: pointer;
 }
 
 
@@ -240,4 +241,53 @@ form p{
 
 .gallery_block{
 	text-align: center;
+}
+
+.locker{
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+#modal .gallery{
+	z-index: 1001;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 100%;
+}
+
+#modal .gallery img{
+	width: 80%;
+}
+
+#modal .gallery div{
+	display: none;
+}
+
+#modal a{
+	z-index: 1002;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+}
+
+#modal{
+	display: none;
+}
+
+.fa{
+	font-size: 30px;
+	color: white;
+}
+
+.fa:hover{
+	color: rgb(255, 102, 0);
 }
