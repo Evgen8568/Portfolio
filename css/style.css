@@ -1,0 +1,353 @@
+@font-face{
+	font-family: "Oswald";
+	src: url(../fonts/Oswald-Regular.ttf);
+}
+
+@font-face{
+	font-family: "Oswald-light";
+	src: url(../fonts/Oswald-Light.ttf);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: Oswald-light, sans-serif;
+}
+
+.header{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 115px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.name{
+	height: 79px;
+	line-height: 79px;
+	text-align: center;
+	font-size: 29px;
+	letter-spacing: 3px;
+	font-weight: normal;
+}
+.name a{
+	font-family: Oswald, sans-serif;
+	color: rgb(56, 53, 48);
+	text-decoration: none;
+}
+
+.menu{
+	margin: 0 auto;
+	height: 34px;
+	width: 90%;
+	line-height: 34px;
+	text-align: center;
+	border-top: 1px solid rgba(56, 53, 48, 0.2);
+	border-bottom: 1px solid rgba(56, 53, 48, 0.2);
+}
+
+.main_menu{
+	margin: 0;
+	padding: 0;
+}
+
+.main_menu li{
+	display: inline-block;
+	margin-right: 20px;
+	list-style: none;
+}
+
+.main_menu a{
+	font-size: 14pt;
+	text-decoration: none;
+	color: #383530;
+    font-family: Oswald-light, sans-serif;
+	letter-spacing: 2.5px;
+	font-weight: 300;
+}
+
+.main_menu a:hover{
+	color: rgb(255, 102, 0);
+	transition: color 0.4s ease 0s;
+}
+
+.main{
+	margin: auto;
+	margin-top: 115px;
+	width: 90%;
+}
+
+.foto{
+	padding: 70px 50px;
+	float:left;
+	width: 25%;
+}
+
+.foto img{
+	width: 300px;
+}
+
+.fio{
+	padding: 50px;
+	float: right;
+	width: 55%;
+}
+
+table{
+	border: 0;
+	font-size: 16pt;
+}
+
+table td{
+	padding: 10px 10px 0 0;
+}
+
+table td:first-child{
+	font-weight: bold;
+}
+
+.video{
+	width: 560px;
+	margin: auto;
+	clear: both;
+}
+
+.hobby{
+	text-align: center;
+}
+
+hr{
+	margin-top: 50px;
+	height: 1px;
+	width: 90%;
+	background: rgba(56, 53, 48, 0.2);
+	border: none;
+	clear: both;
+}
+
+.copy{
+	margin: 30px 0;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	color: #383530;
+}
+
+.left{
+	float:left;
+	margin-bottom: 50px;
+	width: 45%;
+}
+
+.right{
+	padding-top: 100px;
+	margin-bottom: 50px;
+	float: right;
+	width: 45%;
+}
+
+.hobby_run{
+	float: right;
+	margin: 10px;
+}
+
+.hobby_velo{
+	float: left;
+	margin: 10px;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+.clirfix{
+	clear: both;
+}
+
+.align_center{
+	text-align: center;
+}
+
+.contact img{
+	width: 100%;
+}
+
+.form_input{
+	margin-top: 10px;
+	padding: 5px;
+	width: 400px;
+	font-family: Oswald, sans-serif;
+	font-size: 18px;
+	color: rgb(56, 53, 48);
+	border: 1px solid rgba(56, 53, 48, 0.2);
+}
+
+.sum_button{
+	margin-top: 10px;
+	padding: 5px 30px;
+	background: #f5f5f5;
+	font-family: Oswald-light, sans-serif;
+	font-size: 18px;
+	color: rgb(56, 53, 48);
+	border: 1px solid rgba(56, 53, 48, 0.2);
+	cursor: pointer;
+}
+
+.sum_button:hover{
+	background: rgb(255, 102, 0);
+	transition: background 0.4s ease 0s;
+}
+
+.blog_img{
+	float: left;
+	width: 30%;
+}
+
+.blog_img img{
+	max-width: 100%;
+}
+
+.blog_text{
+	float: right;
+	width: 65%;
+}
+
+.blog_text a{
+	margin-top: 70px;
+	float: right;
+	padding-right: 20px;
+	color: rgb(56, 53, 48);
+}
+
+.gallery{
+	display: inline-block;
+	padding: 20px 20px 40px;
+	height: 240px;
+	width: 300px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.gallery:hover{
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+
+.gallery img{
+	width: 300px;
+}
+
+.gallery_block{
+	text-align: center;
+}
+
+.locker{
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+#modal .gallery{
+	z-index: 1001;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 100%;
+}
+
+#modal .gallery img{
+	width: 80%;
+}
+
+#modal .gallery div{
+	display: none;
+}
+
+#modal a .fa-times{
+	z-index: 1002;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+}
+
+#modal a .fa-chevron-left{
+	z-index: 1003;
+	position: fixed;
+	top: 50%;
+}
+
+#modal a .fa-chevron-right{
+	z-index: 1003;
+	position: fixed;
+	top: 50%;
+}
+
+#modal{
+	display: none;
+}
+
+.fa{
+	font-size: 30px;
+	color: white;
+}
+
+.fa:hover{
+	color: rgb(255, 102, 0);
+}
+
+.fa-chevron-left{
+	left: 30px;
+}
+
+.fa-chevron-right{
+	right: 30px;
+}
+
+.note h1{
+	font-size: 24px;
+	text-align: center;
+}
+
+.note_string{
+	margin-top: 20px;
+}
+
+.note_string img{
+	height: 150px;
+}
+
+
+
+.note_left{
+	float: left;
+	margin-right: 100px;
+}
+
+.note_right{
+	float: right;
+	margin-left: 100px;
+}
+
+.note_img img{
+	margin-top: 50px;
+	max-width: 33%;
+}
+
+form span{
+	margin-left: 10px;
+	color: red;
+	font-weight: bold;
+}
