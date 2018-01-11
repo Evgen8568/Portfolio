@@ -1,15 +1,14 @@
 (function() {
 	angular
-	.module('app', ['ngRoute', 'ui.router', 'app1'])
+	.module('app', ['ngRoute', 'ui.router'])
 	.config(config)		//позволяет добавить конфигурацию
 	.run(run);			//Что сделать по выполнению
 	
 	config.$inject = ['$stateProvider', '$urlRouterProvider'];
-	
 	function config($stateProvider, $urlRouterProvider){
 		$stateProvider
 		.state('about', {
-			url:'/',
+			url: '/',
 			templateUrl:'/js/angular/about/about.view.html',
 			controller: 'aboutController'
 		})
@@ -42,7 +41,10 @@
 	}
 	
 	
+	function run($rootScope) {
 	
-	function run() {}
+	}
 	
-})();
+})({
+	baseApiUrl: 'https://my-json-server.typicode.com//Evgen8568/Portfolio'
+});
