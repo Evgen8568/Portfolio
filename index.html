@@ -1,11 +1,10 @@
 <!doctype html>
-<html>
+<html ng-app="app">
 <head>
 <meta charset="utf-8">
-<title>Portfplio</title>
+<title>Portfolio</title>
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
@@ -15,25 +14,33 @@
 	</div>
 	<div class="menu">
 		<ul class="main_menu">
-			<li><a href="index.html?page=about">Обо мне</a></li>
-			<li><a href="index.html?page=blog">Блог</a></li>
-			<li><a href="index.html?page=gallery">Галерея</a></li>
-			<li><a href="index.html?page=contact">Связаться со мной</a></li>
+			<li><a ui-sref="about">Обо мне</a></li>
+			<li><a ui-sref="blog">Блог</a></li>
+			<li><a ui-sref="gallery">Галерея</a></li>
+			<li><a ui-sref="contact">Связаться со мной</a></li>
 		</ul>
 	</div>
 </header>
-<article id="content" class="main"> </article>
+<article id="content" class="main" ui-view> </article>
 <footer>
 <hr />
-<p class="copy">© 2017- Евгений Анатольевич Русецкий</p>
+<p class="copy">© 2017-<span id="currentyear"></span> Евгений Анатольевич Русецкий</p>
 </footer>
  <script type="text/javascript" src="js/content.js"></script>
  <script src="http://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/gallery.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+ <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+ <script type="text/javascript" src="js/angular/app.js"></script>
+ <script type="text/javascript" src="js/angular/about/about.controller.js"></script>
+ <script type="text/javascript" src="js/angular/blog/blog.controller.js"></script>
+ <script type="text/javascript" src="js/angular/gallery/gallery.controller.js"></script>
+ <script type="text/javascript" src="js/angular/contact/contact.Controller.js"></script>
+ <script type="text/javascript" src="js/angular/directive/modal.directive.js"></script>
+ <script type="text/javascript" src="js/angular/services/gallery.serv.js"></script>
   
 </body>
 </html>
