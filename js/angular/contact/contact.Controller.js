@@ -18,11 +18,17 @@ function contactController () {
                 tel: true
             }
         },
-        submitHandler: function () {
-            alert('Спасибо')
-        }
+         submitHandler: function () {
+                $.ajax(appSettings.baseApiUrl + 'messages', {
+                    method: 'POST',
+                    data: JSON.stringify({
+                        name: 'name'
+                    }),
+                    success: alert("Спасибо!")
+                })
+            }
     });
-};
+}
 	
 	
 	

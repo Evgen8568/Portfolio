@@ -1,19 +1,24 @@
 (function(){
 	angular
 	.module('app')
-	.factory('galleryServices', galleryFactory);
+	.factory('galleryService', galleryService);
 	
-	function galleryFactory(){
-		return{
-			getGallery: function(){
-				$http({
-					url: appSettings.baseApiUrl + 'gallery-photos',
-					method: 'GET'
-				})
-				.then(function(response) {
-					success(response.data);
-				});
-			}
-		}
-	}
+	galleryService.$inject = ['$http']
+	
+	function galleryService($http) {
+        var service = {
+            getGallery: function (successCallback) {
+                $http({
+                        url: appSettings.baseApiUrl + 'gallery-photos',
+                        method: 'GET'
+                    })
+                    .then(function (response) {
+                        successCallback(response.data);
+                    });
+            }
+        };
+
+        return service;
+    }
+	
 })();

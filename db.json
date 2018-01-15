@@ -1,59 +1,13 @@
 {
 	"gallery-photos": [{
-			"album": "2017",
 			"photos": [{
 					"url": "img/gallery/Gallery1.jpg",
-					"alt": "Subaru BRZ",
+					"car": "Subaru BRZ",
 					"thumbnail": "img/gallery/small/Gallery1_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery2.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery2_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery3.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery3_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery4.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery4_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery5.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery5_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery6.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery6_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery7.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery7_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery8.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery8_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery9.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery9_s.jpg"
-				},
-				{
-					"url": "img/gallery/Gallery10.jpg",
-					"alt": "Subaru BRZ",
-					"thumbnail": "img/gallery/small/Gallery10_s.jpg"
 				}
 			]
-		}
-	],
+		}]
+		
 	"messages": [{
 		"name": "John",
 		"email": "john@somedomain.test",

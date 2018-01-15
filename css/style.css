@@ -223,6 +223,13 @@ p{
 	float: right;
 	padding-right: 20px;
 	color: rgb(56, 53, 48);
+	text-decoration: underline;
+}
+
+.blog_text a:hover{
+	color: rgb(255, 102, 0);
+	transition: color 0.4s ease 0s;
+	cursor: pointer;
 }
 
 .gallery{
@@ -259,54 +266,15 @@ p{
 	display: none;
 }
 
-#modal .gallery{
-	z-index: 1001;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0);
-	width: 100%;
-	height: 100%;
-}
-
-#modal .gallery img{
-	width: 800px;
-}
-
-#modal .gallery div{
-	display: none;
-}
-
-#modal a .fa-times{
-	z-index: 1002;
-	position: fixed;
-	top: 30px;
-	right: 30px;
-}
-
-#modal a .fa-chevron-left{
-	z-index: 1003;
-	position: fixed;
-	top: 50%;
-}
-
-#modal a .fa-chevron-right{
-	z-index: 1003;
-	position: fixed;
-	top: 50%;
-}
-
-#modal{
-	display: none;
-}
 
 .fa{
 	font-size: 30px;
-	color: white;
+	color: #383530;
 }
 
 .fa:hover{
 	color: rgb(255, 102, 0);
+	transition: color 0.4s ease 0s;
 }
 
 .fa-chevron-left{
@@ -351,4 +319,23 @@ form span{
 	margin-left: 10px;
 	color: red;
 	font-weight: bold;
+}
+
+.blog .blog-content{
+	display: none;
+}
+
+.blog hr{
+	margin-top: 50px;
+	width: 100%;
+}
+
+.blog:last-child hr{
+	display: none;
+	
+}
+
+.blog-content img{
+	margin: 0 20px 20px 0;
+	width: 35%;
 }

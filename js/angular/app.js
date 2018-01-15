@@ -1,4 +1,4 @@
-(function() {
+(function(appSettings) {
 	angular
 	.module('app', ['ngRoute', 'ui.router'])
 	.config(config)		//позволяет добавить конфигурацию
@@ -29,22 +29,15 @@
 			url:'/',
 			templateUrl:'/js/angular/gallery/gallery.view.html',
 			controller: 'galleryController'
-		})
-									
-		.state('note', {
-			url:'/',
-			templateUrl:'/js/angular/note/note.view.html',
-			controller: 'noteController'
 		});
 		
 		$urlRouterProvider.otherwise('/');   //Что включить если не нашло
 	}
 	
 	
+	run.$inject = ['$rootScope'];
 	function run($rootScope) {
-	
+		$rootScope.appSettings = appSettings;
 	}
 	
-})({
-	baseApiUrl: 'https://my-json-server.typicode.com//Evgen8568/Portfolio'
-});
+})({baseApiUrl: 'https://my-json-server.typicode.com/Evgen8568/Portfolio'});
