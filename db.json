@@ -23,6 +23,31 @@
 					"url": "img/gallery/Gallery5.jpg",
 					"car": "Subaru BRZ",
 					"thumbnail": "img/gallery/small/Gallery5_s.jpg"
+		},
+		{
+					"url": "img/gallery/Gallery6.jpg",
+					"car": "Subaru BRZ",
+					"thumbnail": "img/gallery/small/Gallery6_s.jpg"
+		},
+		{
+					"url": "img/gallery/Gallery7.jpg",
+					"car": "Subaru BRZ",
+					"thumbnail": "img/gallery/small/Gallery7_s.jpg"
+		},
+		{
+					"url": "img/gallery/Gallery8.jpg",
+					"car": "Subaru BRZ",
+					"thumbnail": "img/gallery/small/Gallery8_s.jpg"
+		},
+		{
+					"url": "img/gallery/Gallery9.jpg",
+					"car": "Subaru BRZ",
+					"thumbnail": "img/gallery/small/Gallery9_s.jpg"
+		},
+		{
+					"url": "img/gallery/Gallery10.jpg",
+					"car": "Subaru BRZ",
+					"thumbnail": "img/gallery/small/Gallery10_s.jpg"
 		}],
 		
 	"messages": [{

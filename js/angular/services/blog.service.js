@@ -16,7 +16,7 @@
                     })
                     .then(function (response) {
                         successCallback(response.data);
-                    })
+                    });
             }
         };
 

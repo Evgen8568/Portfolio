@@ -5,9 +5,9 @@
 	.module('app')
 	.controller('galleryController', galleryController);
 	
-	galleryController.inject = ['$scope', 'galleryService']
+	galleryController.inject = ['$scope', '$http', 'galleryService']
 	
-	function galleryController($scope, galleryService) {
+	function galleryController($scope, $http, galleryService) {
 	galleryService.getGallery(function (gallery) {
             $scope.gallery = gallery;
 	});
