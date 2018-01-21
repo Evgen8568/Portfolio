@@ -8,25 +8,25 @@
 	function config($stateProvider, $urlRouterProvider){
 		$stateProvider
 		.state('about', {
-			url: '/',
+			url: '/about',
 			templateUrl:'/js/angular/about/about.view.html',
 			controller: 'aboutController'
 		})
 			   
 		.state('blog', {
-			url:'/',
+			url:'/blog',
 			templateUrl:'/js/angular/blog/blog.view.html',
 			controller: 'blogController'
 		})
 					  
 		.state('contact', {
-			url:'/',
+			url:'/contact',
 			templateUrl:'/js/angular/contact/contact.view.html',
 			controller: 'contactController'
 		})
 							 
 		.state('gallery', {
-			url:'/',
+			url:'/gallery',
 			templateUrl:'/js/angular/gallery/gallery.view.html',
 			controller: 'galleryController'
 		});
@@ -40,4 +40,4 @@
 		$rootScope.appSettings = appSettings;
 	}
 	
-})({baseApiUrl: 'https://my-json-server.typicode.com/Evgen8568/Portfolio'});
+})({baseApiUrl: 'https://my-json-server.typicode.com/Evgen8568/Portfolio/'});

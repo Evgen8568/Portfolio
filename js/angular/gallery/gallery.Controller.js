@@ -5,15 +5,15 @@
 	.module('app')
 	.controller('galleryController', galleryController);
 	
-	/*galleryController.inject = ['$scope', 'galleryService']
+	galleryController.inject = ['$scope', 'galleryService']
 	
 	function galleryController($scope, galleryService) {
 	galleryService.getGallery(function (gallery) {
             $scope.gallery = gallery;
 	});
-	}*/
+	}
 	
-	function galleryController($scope) {
+	/*function galleryController($scope) {
     $scope.gallery = [{
         car: 'Subaru BRZ',
         url: '/img/Gallery/Gallery1.jpg',
@@ -114,6 +114,6 @@
         url: '/img/Gallery/Gallery20.jpg',
         thumbnail: '/img/Gallery/small/Gallery20_s.jpg',
   		}];
-	}
+	}*/
 
 })();
