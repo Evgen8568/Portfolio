@@ -1,6 +1,6 @@
 <section class="blog" id="blog" ng-repeat="item in blogItems">
 	<h2>{{item.title}}</h2>
-		<img src="{{item.img}}" alt="{{item.title}}" class="blog_img" />
+		<img src="{{item.cover}}" alt="{{item.title}}" class="blog_img" />
 		<p class="blog_text">{{item.summary}}<a modal data-target="blog-{{$index}}">Читать дальше</a></p>
 		<div class="blog-content" id="blog-{{$index}}">
 		<h2>{{item.title}}</h2>

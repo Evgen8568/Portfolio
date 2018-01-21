@@ -1,30 +1,28 @@
 {
 	"gallery-photos": [{
-			"photos": [{
-					"url": "../img/gallery/Gallery1.jpg",
+					"url": "img/gallery/Gallery1.jpg",
 					"car": "Subaru BRZ",
-					"thumbnail": "../img/gallery/small/Gallery1_s.jpg"
+					"thumbnail": "img/gallery/small/Gallery1_s.jpg"
 				},
 				{
-					"url": "../img/gallery/Gallery2.jpg",
+					"url": "img/gallery/Gallery2.jpg",
 					"car": "Subaru BRZ",
-					"thumbnail": "../img/gallery/small/Gallery2_s.jpg"
+					"thumbnail": "img/gallery/small/Gallery2_s.jpg"
 				},
 				{
-					"url": "../img/gallery/Gallery3.jpg",
+					"url": "img/gallery/Gallery3.jpg",
 					"car": "Subaru BRZ",
-					"thumbnail": "../img/gallery/small/Gallery3_s.jpg"
+					"thumbnail": "img/gallery/small/Gallery3_s.jpg"
 				},
 				{
-					"url": "../img/gallery/Gallery4.jpg",
+					"url": "img/gallery/Gallery4.jpg",
 					"car": "Subaru BRZ",
-					"thumbnail": "../img/gallery/small/Gallery4_s.jpg"
+					"thumbnail": "img/gallery/small/Gallery4_s.jpg"
 				},
 				{
-					"url": "../img/gallery/Gallery5.jpg",
+					"url": "img/gallery/Gallery5.jpg",
 					"car": "Subaru BRZ",
-					"thumbnail": "../img/gallery/small/Gallery5_s.jpg"
-				}]
+					"thumbnail": "img/gallery/small/Gallery5_s.jpg"
 		}],
 		
 	"messages": [{
