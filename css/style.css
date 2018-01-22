@@ -339,3 +339,11 @@ form span{
 	margin: 0 20px 20px 0;
 	width: 35%;
 }
+
+.blof-filter{
+	text-align: right;
+}
+
+.pointer{
+	cursor: pointer;
+}
