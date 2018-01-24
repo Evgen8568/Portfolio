@@ -1,11 +1,11 @@
 (function(appSettings) {
 	angular
-	.module('app', ['ngRoute', 'ui.router', 'ngValidate', 'ngStorage'])
+	.module('app', ['ngRoute', 'ui.router', 'ngValidate', 'ngStorage', 'base64'])
 	.config(config)		//позволяет добавить конфигурацию
 	.run(run);			//Что сделать по выполнению
 	
-	config.$inject = ['$stateProvider', '$urlRouterProvider', '$validatorProvider'];
-	function config($stateProvider, $urlRouterProvider, $validatorProvider){
+	config.$inject = ['$stateProvider', '$urlRouterProvider', '$validatorProvider', '$httpProvider', '$localStorageProvider'];
+	function config($stateProvider, $urlRouterProvider, $validatorProvider, $httpProvider, $localStorageProvider){
 		$stateProvider
 		.state('about', {
 			url: '/',
@@ -44,6 +44,19 @@
          $validatorProvider.addMethod('tel', function (value, element) {
              return /\+[\d\s\-]{9,}/.test(value);
          }, 'Неверный формат номера телефона.');
+		
+		$httpProvider.interceptors.push(['$q', function ($q) {
+             return {
+                 'request': function (httpConfig) {
+                     if ($localStorageProvider.get('token')) {
+                         httpConfig.headers['Authorization'] = $localStorageProvider.get('token');
+                     }
+ 
+                     return httpConfig;
+                 }
+             };
+         }]);
+		
 }
 	run.$inject = ['$rootScope'];
 	function run($rootScope) {

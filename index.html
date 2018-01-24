@@ -14,6 +14,19 @@
 	<div class="name">
 	<a href="index.html"><span>ЕВГЕНИЙ РУСЕЦКИЙ</span></a>
 	</div>
+	<div class="login-button" ng-controller="menuController">
+		<button class="sum_button" ng-show="authorized" ng-click="logout()">Выйти</button>
+        <button class="sum_button" ng-hide="authorized" ng-click="loginFormVisibility = !loginFormVisibility">Войти</button>
+        	<div ng-hide="!loginFormVisibility || authorized" class="login" id="login-form">
+          <a class="fa fa-times pointer" ng-click="loginFormVisibility = !loginFormVisibility"></a>
+           <h1>Авторизация</h1>
+           <form id="loginForm" name="loginForm" ng-submit="login(loginForm)" ng-validate="validationOptions">
+             <form-input title="Логин" name="login" value="model.login"></form-input>
+             <form-input title="Пароль" name="password" value="model.password" type="password"></form-input>
+             <button class="sum_button">Войти</button>
+           </form>
+         </div>
+	</div>
 	<div class="menu">
 		<ul class="main_menu">
 			<li><a ui-sref="about">Обо мне</a></li>

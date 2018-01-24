@@ -41,6 +41,23 @@ body{
 	text-decoration: none;
 }
 
+.login-button{
+	position: absolute;
+	right: 5%;
+	top: 10px;
+	text-align: right;
+}
+
+.login-button h1{
+	text-align: left;
+}
+
+.login{
+	padding: 20px;
+	background: white;
+	border:1px solid rgba(56, 53, 48, 0.2);
+}
+
 .menu{
 	margin: 0 auto;
 	height: 34px;
