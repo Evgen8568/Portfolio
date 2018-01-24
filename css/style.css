@@ -112,9 +112,22 @@ table td:first-child{
 }
 
 .video{
-	width: 560px;
-	margin: auto;
+	position: relative;
+	text-align: center;
 	clear: both;
+}
+
+.video i{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.player{
+	width: 640;
+	height: 320;
 }
 
 .hobby{
