@@ -188,6 +188,12 @@ p{
 	border: 1px solid rgba(56, 53, 48, 0.2);
 }
 
+fieldset{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+
 .sum_button{
 	margin-top: 10px;
 	padding: 5px 30px;
@@ -346,4 +352,12 @@ form span{
 
 .pointer{
 	cursor: pointer;
+}
+
+#map{
+	margin: 50px auto 100px;
+	width: 700px;
+	height: 500px;
+	text-align: center;
+	clear: both;
 }

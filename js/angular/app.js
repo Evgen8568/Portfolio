@@ -1,14 +1,14 @@
 (function(appSettings) {
 	angular
-	.module('app', ['ngRoute', 'ui.router'])
+	.module('app', ['ngRoute', 'ui.router', 'ngValidate', 'ngStorage'])
 	.config(config)		//позволяет добавить конфигурацию
 	.run(run);			//Что сделать по выполнению
 	
-	config.$inject = ['$stateProvider', '$urlRouterProvider'];
-	function config($stateProvider, $urlRouterProvider){
+	config.$inject = ['$stateProvider', '$urlRouterProvider', '$validatorProvider'];
+	function config($stateProvider, $urlRouterProvider, $validatorProvider){
 		$stateProvider
 		.state('about', {
-			url: '/about',
+			url: '/',
 			templateUrl:'/js/angular/about/about.view.html',
 			controller: 'aboutController'
 		})
@@ -32,9 +32,19 @@
 		});
 		
 		$urlRouterProvider.otherwise('/');   //Что включить если не нашло
-	}
 	
 	
+	$validatorProvider.setDefaults({
+             errorElement: 'span'
+         });
+         $validatorProvider.setDefaultMessages({
+             required: 'Это поле обязательно для заполнения.',
+             email: 'Неверный формат email-адреса.'
+         });
+         $validatorProvider.addMethod('tel', function (value, element) {
+             return /\+[\d\s\-]{9,}/.test(value);
+         }, 'Неверный формат номера телефона.');
+}
 	run.$inject = ['$rootScope'];
 	function run($rootScope) {
 		$rootScope.appSettings = appSettings;

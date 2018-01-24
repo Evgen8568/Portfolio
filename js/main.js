@@ -1,10 +1,7 @@
 appSettings = {
-	baseApiUrl: 'https://my-json-server.typicode.com/Evgen8568/Portfolio'
+	baseApiUrl: 'https://my-json-server.typicode.com/Evgen8568/Portfolio/'
 }
-
+var date = new Date().getFullYear();
 (function(){
-	var date = new Date().getFullYear();
-	
 	currentyear.innerHTML = date;
-
 }());

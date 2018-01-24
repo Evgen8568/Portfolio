@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio",
   "main": "webpack.config.js",
   "scripts": {
     "start": "start node_modules\\.bin\\webpack --watch & node_modules\\.bin\\http-server -c-1"
@@ -18,7 +18,10 @@
   "homepage": "https://github.com/Evgen8568/Portfolio#readme",
   "dependencies": {
     "http-server": "^0.11.1",
+    "jquery-validation": "^1.17.0",
     "ngstorage": "^0.3.11",
-    "webpack": "^3.10.0"
-  }
+    "webpack": "^3.10.0",
+    "ymaps": "^0.1.1"
+  },
+  "devDependencies": {}
 }
