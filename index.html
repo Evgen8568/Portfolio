@@ -36,6 +36,9 @@
 		</ul>
 	</div>
 </header>
+<button class="back-button" ng-controller="historyController" ng-show="canBack" ng-click="back()">
+	<i class="fa fa-chevron-left"></i>
+</button>
 <article id="content" class="main" ui-view> </article>
 <footer>
 <hr />
