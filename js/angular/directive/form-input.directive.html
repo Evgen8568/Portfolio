@@ -1,5 +1,5 @@
 <fieldset>
-    <input class="form_input" ng-hide="type === 'textarea'" type="{{type ? type : 'text'}}" id="input-{{name}}" name="{{name}}" ng-model="value" placeholder="{{placeholder ? placeholder : title}}" onFocus="this.placeholder=''" onBlur="this.placeholder=''"
+    <input class="form_input" ng-hide="type === 'textarea'" type="{{type ? type : 'text'}}" id="input-{{name}}" name="{{name}}" ng-model="value" placeholder="{{placeholder}}" ng-focus="hidePlaceholder()" ng-blur="restorePlaceholder()"
     />
-    <textarea class="form_input"  rows="5" ng-show="type === 'textarea'" id="textarea-{{name}}" name="{{name}}" ng-model="value" placeholder="{{placeholder ? placeholder : title}}" onFocus="this.placeholder=''" onBlur="this.placeholder=''"></textarea>
+    <textarea class="form_input"  rows="5" ng-show="type === 'textarea'" id="textarea-{{name}}" name="{{name}}" ng-model="value" placeholder="{{placeholder}}" ng-focus="hidePlaceholder()" ng-blur="restorePlaceholder()"></textarea>
 </fieldset>

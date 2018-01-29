@@ -16,7 +16,18 @@
                 type: '@',
                 title: '@',
                 placeholder: '@'
-            }
+            },
+			link: function(scope, element, attrs){
+				var pla =  scope.placeholder = scope.placeholder ? scope.placeholder : scope.title;
+				scope.restorePlaceholder = function(){
+					scope.placeholder = pla;
+				}
+			
+					    scope.hidePlaceholder = function(){
+					scope.placeholder = '';
+				
+}    
+}
         }
     }
 })();
