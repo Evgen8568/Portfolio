@@ -388,22 +388,6 @@ form span{
 	clear: both;
 }
 
-.back-button{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 5%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0);
-	z-index: 99999;
-	cursor: pointer;
-	border: 0;
-}
-
-.back-button:hover{
-	background: rgba(0, 0, 0, 0.2);
-}
-
 .grid{
 	margin: 0 auto;
 }
