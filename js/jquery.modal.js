@@ -2,7 +2,8 @@
 	var defaults = {
 		overlay: '<div class="overlay"></div>',
 		modal: '<div id="modal"><a class="close fa fa-times"></a></div>',
-		onRenderContent: null
+		onRenderContent: null,
+		onClose: null
 	};
 
 	$.fn.modal = function (settings) {
@@ -25,6 +26,9 @@
 		$modal.append($content);
 		$modal.children('a').click(function () {
 			$overlay.remove();
+			if (currentSettings.onClose){
+ 					currentSettings.onClose();
+ 				}
 		});
 
 		return this;
