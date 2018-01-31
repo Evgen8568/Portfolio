@@ -39,17 +39,23 @@
                      });
                  }]
              })
-					  
-		.state('contact', {
-			url:'/contact',
-			templateUrl:'/js/angular/contact/contact.view.html',
-			controller: 'contactController'
-		})
 							 
 		.state('gallery', {
 			url:'/gallery',
 			templateUrl:'/js/angular/gallery/gallery.view.html',
 			controller: 'galleryController'
+		})
+		
+		.state('project', {
+			url:'/project',
+			templateUrl:'/js/angular/project/project.view.html',
+			controller: 'projectController'
+		})
+		
+		.state('contact', {
+			url:'/contact',
+			templateUrl:'/js/angular/contact/contact.view.html',
+			controller: 'contactController'
 		});
 		
 		$urlRouterProvider.otherwise('/');   //Что включить если не нашло

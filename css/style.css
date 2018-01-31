@@ -403,3 +403,19 @@ form span{
 .back-button:hover{
 	background: rgba(0, 0, 0, 0.2);
 }
+
+.grid{
+	margin: 0 auto;
+}
+
+.grid a{
+	cursor: pointer;
+}
+
+.block-ui{
+	position: relative;
+}
+
+*[disabled] {
+	cursor: not-allowed !important;
+}
