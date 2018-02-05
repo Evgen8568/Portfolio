@@ -1,26 +1,6 @@
-<div id="map"><h1>Или заходите в гости:)</h1></div>
-<script type="text/javascript">
-	$(document).ready(function(){
-		ymaps.load().then(function(ymaps){
-			var map = new ymaps.Map('map', {
-				center: [53.918474, 27.583611],
-				zoom:12
-			});
-			
-			//[position.coords.latitude, position.coords.longitude]
-
-			navigator.geolocation.getCurrentPosition(function(position){
-				
-			},
-													 
-		function(error){
-				 console.log(error);
-			});
-		
-			navigator.geolocation.watchPosition(function(position){
-				console.log(position.coords.latitude + ', ' + position.coords.longitude);
-			});
-		
-		})
-	});
-	</script>
+<section class="contact map" ng-controller="mapController">
+    <h1>Или приходите:)</h1>
+    <map on-get-position="map.onGetPosition(coords)">
+        <route ng-repeat="route in map.routes" points="route.points"></route>
+    </map>
+</section>

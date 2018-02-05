@@ -380,12 +380,17 @@ form span{
 	cursor: pointer;
 }
 
-#map{
+map{
+	display: block;
 	margin: 50px auto 100px;
-	width: 700px;
+	width: 100%;
 	height: 500px;
 	text-align: center;
 	clear: both;
+}
+
+.map h1{
+	text-align: center;
 }
 
 .grid{
@@ -399,6 +404,8 @@ form span{
 .block-ui{
 	position: relative;
 }
+
+
 
 *[disabled] {
 	cursor: not-allowed !important;
