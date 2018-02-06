@@ -115,16 +115,16 @@ body{
 	width: 55%;
 }
 
-table{
+.info{
 	border: 0;
 	font-size: 16pt;
 }
 
-table td{
+.info td{
 	padding: 10px 10px 0 0;
 }
 
-table td:first-child{
+.info td:first-child{
 	font-weight: bold;
 }
 
@@ -394,11 +394,52 @@ map{
 }
 
 .grid{
-	margin: 0 auto;
+	margin: 150px auto 0;
+	padding: 0;
+	width: 70%;
+	font-size: 14pt;
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.grid thead{
+	background-color: rgba(120, 120, 120, 0.7);
+}
+
+.grid tr{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.grid td{
+	margin: 0;
+	padding: 0 10px;
+	border: 1px solid rgba(56, 53, 48, 1);
+}
+
+
+
+.grid tbody tr:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.grid tfoot{
+	text-align: left;
 }
 
 .grid a{
 	cursor: pointer;
+}
+
+.grid ul{
+	margin: 10px 0;
+}
+
+.all{
+	float: right;
+	font-weight: bold;
 }
 
 .block-ui{
@@ -413,11 +454,15 @@ map{
 }
 
 .spinner {
-  margin: 100px auto;
-  width: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateZ(-50%);
+ 	margin: 0 auto;
+ 	width: 50px;
+	height: 40px;
+	text-align: center;
+ 	font-size: 10px;
 }
 
 .spinner > div {

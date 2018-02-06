@@ -15,6 +15,18 @@
 					current: 0
 				}
 			};
+			
+			$scope.getType = function (value){
+ 				if (Array.isArray(value)){
+ 					return 'array';
+ 				}
+ 
+ 				if (!isNaN(value)){
+ 					return 'number';
+ 				}
+ 
+ 				return 'string';
+ 			}
 
 			$scope.$watch('source.items', function (source) {
 				if (!source || !angular.isArray(source)) {
